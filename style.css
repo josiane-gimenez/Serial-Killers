@@ -1,0 +1,263 @@
+/* Importa a fonte Chakra Petch do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Anton:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* Estiliza o corpo da página */
+body {
+   
+    font-family: "Chakra Petch", sans-serif;
+    background-image: url("Designsemnome.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+header, main, footer {
+    width: 80%;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ca1a1a;
+    box-shadow: 0 2px 5px rgba(252, 250, 250, 0.3);
+  }
+  
+
+/* Estiliza os títulos h1 */
+h1 {
+     /* Alinha o texto ao centro */
+    text-align: center ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-size: 2.5rem; /* Tamanho da fonte */
+    color: #fcfafa; /* Cor do texto */
+    letter-spacing: 0.4rem; /* Espaçamento entre letras */
+    text-shadow: 0 0 5px #eee8e8, 0 0 10px #eee8e8, 0 0 20px #eee8e8; 
+    border-radius: 5px;
+    padding: 15px;
+}
+
+h2 {
+    font-size: 1.5em; /* Ajuste o tamanho da fonte conforme necessário */
+    color: #fcf8f8; /* Ajuste a cor conforme necessário */
+    margin-bottom: 1rem; /* Ajuste a margem inferior conforme necessário */
+    text-shadow: 0 0 5px #750202, 0 0 10px #faf6f6,0 0 20px #3db8f1
+ 
+}
+/* Estiliza as seções da página */
+section {
+    
+    display: flex;
+    flex-direction: column;
+    width: 80;/* Usa Flexbox para layout */
+    margin: 0 auto;  /* Alinha os itens na vertical */
+    padding: 20px;
+    align-items: center; /* Centraliza os itens horizontalmente */
+    margin-bottom: 3rem; /* Espaçamento abaixo de cada seção */
+}
+
+/* Estiliza os inputs dentro das seções */
+section input {
+    width: 300px; /* Largura dos inputs ajusta-se à tela */
+    max-width: 30rem; /* Largura máxima */
+    border: none; /* Remove a borda padrão */
+    padding: 1rem; /* Espaçamento interno */
+    border-radius: 1.5rem; /* Borda arredondada */
+    margin-bottom: 1rem; /* Espaçamento abaixo dos inputs */
+    color: #45474B; /* Cor do texto */
+    font-size: 1rem; /* Tamanho da fonte */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+/* Estiliza os botões dentro das seções */
+section {
+    display: flex;
+    flex-wrap: nowrap; /* Garante que os itens não quebrem para a próxima linha */
+    justify-content: flex-start; /* Alinha os itens ao início da linha */
+    gap: 8px; /* Adiciona um espaço entre o campo e os botões */
+    align-items: center; /* Alinha verticalmente ao centro */
+}
+
+input[type="text"] {
+    flex-grow: 0; /* O input não expande */
+    max-width: 300px; 
+    padding: 0.8rem; /* Espaçamento interno */
+    font-size: 1rem; /* Tamanho da fonte */
+    margin: 0;
+}
+
+section button {
+    padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 1.5rem; /* Borda arredondada */
+    background-color: #dddd; /* Cor de fundo do botão */
+    color: #030303; /* Cor do texto do botão */
+    font-size: 1rem; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+/* Adiciona efeito hover ao botão de pesquisa */
+section button:hover {
+    background-color: #ffffff; /* Muda a cor de fundo ao passar o mouse */
+    box-shadow: 0 4px 8px rgb(250, 248, 248); /* Adiciona uma sombra mais intensa */
+}
+
+/* Estiliza a caixa de resultados da pesquisa */
+.resultados-pesquisa {
+    color: #fa1212;
+    box-shadow: #b9b6b6be;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 300px;    
+    max-width: 60rem; /* Define uma largura máxima */
+    height: 46vh; /* Altura da caixa de resultados */
+    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+    margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
+    padding: 1rem; /* Espaçamento interno */
+    border-radius: 0.6rem; /* Borda arredondada */
+    background-repeat: no-repeat;
+}
+
+.item {
+    color: #ffffff;
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ca1a1a;
+    box-sizing: border-box;
+  }
+  
+/* Estiliza cada item de resultado */
+.item-resultado {
+    color: #eee8e8;
+    background: #42414100; /* Cor de fundo dos itens */
+    border-radius: 0.6rem; /* Borda arredondada */
+    padding: 1rem; /* Espaçamento interno */
+    margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
+    box-shadow: 0 2px 4px rgba(245, 242, 242, 0.1); /* Sombra leve */
+}
+
+/* Estiliza os títulos dentro dos itens de resultado */
+.item-resultado h2 {
+    font-size: 1.5rem; /* Tamanho da fonte */
+    color: #f7f4f4; /* Cor do texto */
+}
+
+/* Estiliza os links dentro dos itens de resultado */
+.item-resultado a {
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: #9c0404; /* Cor do texto dos links */
+}
+
+.item-resultado a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+.descricao-meta { 
+    color: #f35757a8;
+}
+
+.not-found {
+    color: #fa1212;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+/* Estiliza o rodapé da página */
+footer {
+    
+    background-color: #28292b11; /* Cor de fundo do rodapé */
+    color: #fdfbfb; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 1rem 0; /* Espaçamento interno */
+    width: 100%; /* Largura total da página */
+    position:relative; /* Fixa o rodapé no fundo da tela */
+     /* Alinha ao fundo da tela */
+    font-size: 1rem; /* Tamanho da fonte */
+    box-sizing: border-box; /* Inclui padding na largura total */
+}
+
+.imagem-flutuante {
+    float: right;
+    opacity: 0;
+    transform: translateY(50px) scale(0.8);
+    animation: surgir 2s ease-in-out forwards;
+    text-align: left; color: #fdfafa;
+  }
+  
+  @keyframes surgir {
+    from {
+      opacity: 0;
+      transform: translateY(50px) scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+/* Responsividade para tablets */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Tamanho da fonte em telas menores */
+        letter-spacing: 0.2rem; /* Espaçamento entre letras */
+    }
+
+    section input {
+        width: 25rem; /* Largura dos inputs */
+        padding: 0.8rem;
+    }
+
+    .resultados-pesquisa {
+        width: 90%; /* Largura da caixa de resultados em telas menores */
+        height: 40vh;
+    }
+
+    .item-resultado h2 {
+        font-size: 1.3rem;
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+        letter-spacing: 0.1rem;
+    }
+
+    section input {
+        width: 100%;
+        max-width: 17rem; /* Largura dos inputs em telas pequenas */
+    }
+
+    section button {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem; /* Tamanho da fonte */
+    }
+
+    .resultados-pesquisa {
+        width: 100%; /* Largura ajusta-se à tela */
+        height: 50vh;
+    }
+
+    .item-resultado h2 {
+        font-size: 1.1rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+
+    .logo {
+        width: 80px; /* Reduz o tamanho da logo */
+        top: 5px;
+        left:5px;
+}
+}
